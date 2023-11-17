@@ -3,10 +3,11 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   font-family: 'Alumni Sans', sans-serif;
   font-size: 16px;
   height: 100%;
@@ -37,10 +38,52 @@ body, html {
     z-index: 1;
 }
 
-.clim-content img {
-    height: 11.5rem;
+.caixa {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 1000px;
+
+  padding: 0 2rem;
 }
 
-.search img {
+.procura {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+}
+
+.procura  button {
+  margin: 0rem .5rem 0rem;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4D54FF;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.procura img {
+  width: 25px;
   height: 25px;
+}
+
+.procura input {
+  height: 50px;
+  width: 300px;
+  padding: 0.5rem 0.5rem 0.5rem 3.1rem;
+}
+
+.conteudo-clima img {
+    height: 11.5rem;
 }
