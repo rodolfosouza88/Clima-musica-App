@@ -64,8 +64,10 @@ async function procurarCidade(city) {
 }
  
 function mostrarClimaNaTela(resultado) {
+    document.querySelector('.icone-tempo').src=`./assets/img/${resultado.weather[0].icon}.png`
     document.querySelector('.nome-cidade').innerHTML = `${resultado.name}`;
     document.querySelector('.temperatura').innerHTML = `${resultado.main.temp.toFixed(0)}°C`;
     document.querySelector('.maxTemperatura').innerHTML = `MÁX: ${resultado.main.temp_max.toFixed(0)}°C`;
     document.querySelector('.minTemperatura').innerHTML = `MIN: ${resultado.main.temp_min.toFixed(0)}°C`;
 }
+
